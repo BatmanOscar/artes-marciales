@@ -2,7 +2,46 @@ body {
     background-color: #f2f2f2;
 }
 
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px; /* Adjust padding as needed */
+  border-radius: 5px;
+  background-color: #25D366; /* WhatsApp green */
+  color: #fff; /* White text */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+  cursor: pointer;
+  position: relative; /* For hover effect */
+  overflow: hidden; /* Needed for smooth transition */
+}
 
+.whatsapp-button img {
+  margin-right: 10px; /* Adjust spacing as needed */
+  width: 24px;
+  height: 24px;
+}
+
+.whatsapp-button span {
+  line-height: 1; /* Ensure text aligns vertically */
+}
+
+.whatsapp-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #4CAF50 0%, #25D366 100%); /* WhatsApp green gradient */
+  transform: translateX(-100%); /* Move gradient off-screen initially */
+  transition: transform 0.3s ease-out; /* Smooth animation */
+}
+
+.whatsapp-button:hover::after {
+  transform: translateX(0); /* Animate gradient on hover */
+}
 
 .conteiner-center .navbar {
     background-color: #333;
