@@ -55,37 +55,34 @@
         </div>
         </nav>
     </header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Formulario de contacto</h2>
-                <form name="artes marciales" method="POST" data-netlify="true">
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Introduzca su nombre">
-                    </div>
-                    <div class="mb-3">
-                        <label for="correo" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="correo"
-                            placeholder="Introduzca su correo electrónico">
-                    </div>
-                    <div class="mb-3">
-                        <label for="telefono" class="form-label">Teléfono</label>
-                        <input type="tel" class="form-control" id="telefono"
-                            placeholder="Introduzca su número de teléfono">
-                    </div>
-                    <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
-            <div class="col-md-6 text-center">
-                <img src="./img/guerrero contacto.svg" alt="Logotipo guerrero" class="img-fluid">
-            </div>
-        </div>
-    </div>
+    
+   <title>Videos with Centered Title</title>
+  <style>
+    .center {  text-align: center;
+    }
+    
+    .videos {  display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px auto;  }
+    
+    .video {  margin: 10px;  }
+  </style>
+    <h2 class="center">Artes Marciales</h2>  <div class="videos">
+        <video width="560" height="315" controls class="video">
+          <source src="./video/pelea 1.mp4" type="video/mp4">
+        </video>
+        <video width="560" height="315" controls class="video">
+          <source src="video2.mp4" type="video/mp4">
+        </video>
+        <video width="560" height="315" controls class="video">
+          <source src="video3.mp4" type="video/mp4">
+        </video>
+        <video width="560" height="315" controls class="video">
+          <source src="video4.mp4" type="video/mp4">
+        </video>
+      </div>
+    
     <footer class="bg-dark text-light py-3 mt-5">
         <div class="container">
             <div class="row">
